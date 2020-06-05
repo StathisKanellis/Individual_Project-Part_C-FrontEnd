@@ -1,0 +1,191 @@
+
+
+
+h1, h2, h3{
+    margin: 0;
+}
+
+#container{
+    background-color: whitesmoke;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header{
+    background-image: url("https://images.unsplash.com/photo-1515755694157-7dc1e21f5fc2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60");
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-size: auto;
+    color:white;
+    text-align: center;
+    padding: 50px;
+}
+
+#body{
+    background-color:whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content{
+    padding: 10px;
+}
+
+#leftbar{
+    width: 280px;
+    float: left;
+    
+}
+
+#leftbar ul{
+    list-style-type: square;
+    list-style-position: inside;
+    padding: 0;
+    
+}
+
+#main{
+    width: 500px;
+    float: right;
+}
+
+#mainSelect{
+    width: 780px;
+    float: left;
+}
+
+#footer{
+    clear: both;
+    color: white;
+    padding: 10px;
+    background-color: rgb(255, 17, 128);
+    text-align: right;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color:  rgb(255, 17, 128);
+}
+  
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+  
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+  
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: pink;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ------------------ Add CSS -------------------------*/
+body>table{
+    width: auto;/*80%*/
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table.list{
+    width: auto; /*100%*/
+}
+
+td{
+    border: 1px solid black;
+    text-align: left;
+    padding: 3px;
+}
+
+table.hide,table.list thead>tr{
+    background-color: rgb(206, 206, 206);
+}
+
+input[type=text],input[type=number],input[type=date]{
+    width: 100%; /*100*/
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: 30%; /* 30% */
+    background-color: rgb(206, 206, 206);
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form div.action-button{
+    text-align: right;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+    margin-right: 4px;
+}
+
+label.validation-error{
+    color: red;
+    margin-left: 5px;
+}
+
+.hide{
+    display: none;
+}

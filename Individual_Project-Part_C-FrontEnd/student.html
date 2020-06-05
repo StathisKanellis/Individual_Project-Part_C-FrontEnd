@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private School</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Creative Thinking & Innovation</h1>
+        </div>
+        <div class="navbar">
+            <a class="home.html" href="home.html">Home</a>
+            <a a href="selected">Student</a>
+            <a href="trainer.html">Trainer</a>
+            <a href="course.html">Course</a>
+            <a href="assignment.html">Assignment</a>
+            <div class="dropdown">
+                <button class="dropbtn">More
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="studentPerCourse.html">Students per Course</a>
+                    <a href="trainerPerCourse.html">Trainers per Course</a>
+                    <a href="assignmentsPerCourse.html">Assignments per Course</a>
+                    <a href="assignmentsPerStudentPerCourse.html">Assignments per Student per Course</a>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div id="mainSelect">
+                <table>
+                    <tr>
+                        <td>
+                            <!-- form for CRUD Operations -->
+                            <form onsubmit="event.preventDefault();submitForm();" autocomplete="off">
+                                <br>
+                                <h2>Student</h2>
+                                <hr>
+                                <div>
+                                    <label>First Name</label>
+                                    <input type="text" required name="firstname" id="firstname" maxlength="20">
+                                </div>
+                                <div>
+                                    <label>Last Name</label>
+                                    <input type="text" required name="lastname" id="lastname" maxlength="20">
+                                </div>
+                                <div>
+                                    <label>Date Of Birth</label>
+                                    <input type="date"  name="dateOfBirth" id="dateOfBirth">
+                                </div>
+                                <div>
+                                    <label>Tuition Fees (between 0 and 2500)</label>
+                                    <input type="number" name="fees" id="fees" min="0" max="2500">
+                                </div>
+                                <div class="action-button">
+                                    <input type="submit" name="submit">
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <!-- table to list all records -->
+                            <table class="list" id="studentList">
+                                <thead>
+                                    <tr>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Date Of Birth</th>
+                                        <th>Tuition Fees</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <script src="student.js"></script>
+            </div>
+        </div>
+        <div id="footer">
+            Copyright &copy; 2020 Stathis Kanellis
+        </div>
+    </div>
+</body>
+
+</html>

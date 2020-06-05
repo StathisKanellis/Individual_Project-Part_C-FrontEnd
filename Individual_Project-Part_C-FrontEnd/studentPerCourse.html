@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private School</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Creative Thinking & Innovation</h1>
+        </div>
+        <div class="navbar">
+            <a class="home.html" href="home.html">Home</a>
+            <a a href="student.html">Student</a>
+            <a href="trainer.html">Trainer</a>
+            <a href="course.html">Course</a>
+            <a href="assignment.html">Assignment</a>
+            <div class="dropdown">
+                <button class="dropbtn">More
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="selected">Students per Course</a>
+                    <a href="trainerPerCourse.html">Trainers per Course</a>
+                    <a href="assignmentsPerCourse.html">Assignments per Course</a>
+                    <a href="assignmentsPerStudentPerCourse.html">Assignments per Student per Course</a>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div id="mainSelect">
+                <table>
+                    <tr>
+                        <td>
+                            <!-- form for CRUD Operations -->
+                            <form onsubmit="event.preventDefault();submitForm();" autocomplete="off">
+                                <br>
+                                <h2>Student Per Course</h2>
+                                <hr>
+                                <div>
+                                    <br>
+                                    <label>Full Name Student</label>
+                                    <select required name="student" id="student">
+                                        <option value="select"></option>
+                                        <option value="Thanos Katrakis">Thanos Katrakis</option>
+                                        <option value="Xenofon Vlaxogiannis">Xenofon Vlaxogiannis</option>
+                                        <option value="Stathis Kanellis">Stathis Kanellis</option>
+                                        <option value="Eleni Parisi">Eleni Parisi</option>
+                                        <option value="Vaggelis Koutsogiorgos">Vaggelis Koutsogiorgos</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div>
+                                    <label>Gender: </label>
+                                    <input type="radio" required name="Gender" value="Male" checked />Male
+                                    <input type="radio" required name="Gender" value="Female" />Female
+                                    <input type="radio" required name="Gender" value="Other" />Other
+                                </div>
+                                <br>
+                                <div>
+                                    <label>Select Course</label>
+                                    <select required name="course" id="course">
+                                        <option value="select"></option>
+                                        <option value="CB8 Java">CB8 Java</option>
+                                        <option value="CB8C Sharp">CB8 C#</option>
+                                        <option value="CB9 Python">CB9 Python</option>
+                                        <option value="CB9 JavaScript">CB9 JavaScript</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div>
+                                    <label>Type: </label>
+                                    <input type="radio" required name="Type" value="FullTime" checked />FullTime
+                                    <input type="radio" required name="Type" value="PartTime" />PartTime
+                                    <input type="radio" required name="Type" value="Other" />Other
+                                </div>
+                                <br>
+                                
+                                <div>
+                                    <label>SubDateTime</label>
+                                <input type="date" required name="subDateTime" id="subDateTime">
+                                </div>                             
+                               
+                                <div class="action-button">
+                                    <input type="submit" name="submit">
+                                </div>
+                            </form>
+                        </td>
+                        <td>
+                            <!-- table to list all records -->
+                            <table class="list" id="studentCourseList">
+                                <thead>
+                                    <tr>
+                                        <th>Student</th>
+                                        <th>Gender</th>
+                                        <th>Course</th>
+                                        <th>Type</th>
+                                        <th>SubDateTime</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <script src="studentPerCourse.js"></script>
+            </div>
+        </div>
+        <div id="footer">
+            Copyright &copy; 2020 Stathis Kanellis
+        </div>
+    </div>
+</body>
+
+</html>
